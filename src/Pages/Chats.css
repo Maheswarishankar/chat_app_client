@@ -1,0 +1,12 @@
+
+@media (max-width: 576px) {
+    .search-box{
+     margin-bottom: 8px;
+    }
+   }
+ 
+   @media (min-width: 769px) {
+     .search-box{
+         margin-bottom: 8px;
+        }
+   }

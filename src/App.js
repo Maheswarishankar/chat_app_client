@@ -1,23 +1,22 @@
-import logo from './logo.svg';
+
 import './App.css';
+
+import { Routes, Route } from 'react-router-dom';
+import Login from './components/Login';
+import Signup from './components/Signup';
+import Home from './components/Home';
+import Chats from './Pages/Chats';
+
+export const URL = "https://chat-app-server-zmkz.onrender.com";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App">      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/login' element={<Login />} />
+        <Route path='/singup' element={<Signup />} />
+        <Route path='/chats' element={<Chats />} />
+      </Routes>
     </div>
   );
 }

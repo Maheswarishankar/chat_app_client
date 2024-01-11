@@ -1,0 +1,79 @@
+.bg {
+    background-image: url('https://assets-global.website-files.com/64c101129d23396724b5b03e/64c101129d23396724b5b046_hand-atf.webp');
+    background-size:cover;
+    border-radius: 30px; 
+    
+}
+
+
+/* Adjustments for mobile devices */
+@media (max-width: 767px) {
+    .bg {
+        height: 85dvh;
+        border-radius: 15px;
+        background-position: center;
+    }
+    
+    .top-p{
+        font-size: 25px;
+    }
+    .p1{
+        font-size: 20px;
+    }
+    .p2{
+        font-size: 35px;
+        font-weight: 600;
+        line-height: 100%;
+        overflow: hidden;
+    }
+    .box-sq{
+        height: 140px; ;
+        width:140px ;
+    }
+
+}
+
+/* Adjustments for medium-sized screens */
+@media (min-width: 768px) and (max-width: 991px) {
+    .bg {
+    height: 85dvh;
+    background-position: center;
+    }
+    .p1{
+        font-size: 30px;
+    }
+    .p2{
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 100%;
+        overflow: hidden;
+    }
+    .box-sq{
+        height: 200px;
+        width: 200px ;
+    }
+}
+
+/* Additional styles for larger screens if needed */
+@media (min-width: 992px) {
+    .bg {
+        height: 85dvh;
+        
+    }
+    .top-p{
+        font-size: 70px;
+    }
+    .p1{
+        font-size: 30px;
+    }
+    .p2{
+        font-size: 55px;
+        font-weight: 600;
+        line-height: 114%;
+        overflow: hidden;
+    }
+    .box-sq{
+        height: 250px;
+        width:250px ;
+    }
+}
